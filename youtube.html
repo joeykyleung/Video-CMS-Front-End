@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Youtube clone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+
+<body>
+  <!--semantic elements: header, nav, main and section, same as div, gives search engines and screen readers meaning-->
+  <header class="header">
+    <div class="left">
+      <img class="hamburger" src="images/hamburger.png">
+      <img class="logo" src="images/logo.png">
+    </div>
+    <div class="middle">
+      <input class="search" type="text" placeholder="Search">
+      <button class="search-button">
+        <img class="search-button-img" src="images/search.webp">
+        <div class="tooltip">Search</div>
+      </button>
+      <button class="search-voice-button">
+        <img class="search-voice-img" src="images/Google-Voice.png">
+        <div class="tooltip">Search with your voice</div>
+      </button>
+    </div>
+    <div class="right">
+      <div class="upload-container">
+        <img class="upload-button-img" src="images/upload.jpg">
+        <div class="tooltip">Create</div>
+      </div>
+      <div class="apps-container">
+        <img class="apps-button-img" src="images/youtube-apps.png">
+        <div class="tooltip">Apps</div>
+      </div>
+      <div class="notifs">
+        <img class="notifications-button-img" src="images/notification.jpg">
+        <div class="notifs-count">3</div>
+        <div class="tooltip">Notifications</div>
+      </div>
+      <img class="channel-profile" src="images/channel-profile.jpg">
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <div class="sidebar-link">
+      <img class="home-icon" src="images/home-icon.png">
+      <div>Home</div>
+    </div>
+    <div class="sidebar-link">
+      <img class="explore-icon" src="images/explore-icon.png">
+      <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+      <img class="subscriptions-icon" src="images/subscriptions-icon.jpg">
+      <div>Subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+      <img class="originals-icon" src="images/originals-icon.png">
+      <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+      <img class="music-icon" src="images/music-icon.jpg">
+      <div>Music</div>
+    </div>
+    <div class="sidebar-link">
+      <img class="library-icon" src="images/library-icon.jpg">
+      <div>Library</div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="video-grid">
+      <div class="video-preview">
+        <div class="first-row">
+          <a href="https://www.youtube.com" target="_blank">
+            <img class="thumbnail" src="images/thumbnail-1.jpg">
+          </a>
+          <div class="video-time">
+            4:20
+          </div>
+        </div>
+        <div class="thumbnail-row">
+          <div class="channel-picture">
+            <a href="https://www.youtube.com" target="_blank">
+              <img class="profile-picture" src="images/profile-1.jpg">
+            </a>
+            <div class="channel-description">
+              <div class="channel-description-left">
+                <img class="profile-picture" src="images/profile-1.jpg">
+              </div>
+              <div class="channel-description-right">
+                <div class="title">John Doe</div>
+                <div class="subtitle">6.9B subscribers</div>
+              </div>
+            </div>
+          </div>
+          <div class="video-info">
+            <a href="https://www.youtube.com" target="_blank" class="video-link">
+              <p class="video-title"> This is the title of first Youtube vid and other misc stuff</p>
+            </a>
+            <p class="video-author"> Youtube channel &#35;1</p>
+            <p class="video-stats"> 420M views &#183; 69 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="first-row">
+          <img class="thumbnail" src="images/thumbnail-2.jpg">
+          <div class="video-time">
+            0:69
+          </div>
+        </div>
+        <div class="thumbnail-row">
+          <div class="channel-picture">
+            <img class="profile-picture" src="images/profile-2.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title"> This is the title of second Youtube vid</p>
+            <p class="video-author"> Youtube channel &#35;2</p>
+            <p class="video-stats"> 420M views &#183; 69 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="first-row">
+          <img class="thumbnail" src="images/thumbnail-3.jpg">
+          <div class="video-time">
+            4:20
+          </div>
+        </div>
+        <div class="thumbnail-row">
+          <div class="channel-picture">
+            <img class="profile-picture" src="images/profile-3.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title"> This is the title of 3rd Youtube vid and other misc stuff</p>
+            <p class="video-author"> Youtube channel &#35;3</p>
+            <p class="video-stats"> 420M views &#183; 69 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="first-row">
+          <img class="thumbnail" src="images/thumbnail-4.jpg">
+          <div class="video-time">
+            69:69
+          </div>
+        </div>
+        <div class="thumbnail-row">
+          <div class="channel-picture">
+            <img class="profile-picture" src="images/profile-4.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title"> This is the title of fourth Youtube vid</p>
+            <p class="video-author"> Youtube channel &#35;4</p>
+            <p class="video-stats"> 420M views &#183; 69 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="first-row">
+          <img class="thumbnail" src="images/thumbnail-5.jpg">
+          <div class="video-time">
+            --:--
+          </div>
+        </div>
+        <div class="thumbnail-row">
+          <div class="channel-picture">
+            <img class="profile-picture" src="images/profile-5.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title"> This is the title of 5th Youtube vid</p>
+            <p class="video-author"> Youtube channel &#35;5</p>
+            <p class="video-stats"> 420M views &#183; 69 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="video-preview">
+        <div class="first-row">
+          <img class="thumbnail" src="images/thumbnail-6.jpg">
+          <div class="video-time">
+            42:0
+          </div>
+        </div>
+        <div class="thumbnail-row">
+          <div class="channel-picture">
+            <img class="profile-picture" src="images/profile-6.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title"> This is the title of sixth Youtube vid</p>
+            <p class="video-author"> Youtube channel &#35;6</p>
+            <p class="video-stats"> 420M views &#183; 69 months ago</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

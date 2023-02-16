@@ -1,0 +1,23 @@
+p {
+    font-family: Roboto, Arial;
+    /*Font stack: in case Roboto fails to load, Arial is back-up font*/
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    margin: 0;
+    /*margin targets all margin attributes*/
+    padding-top: 55px;
+    height: 3000px;
+    margin-left: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgb(247, 247, 247);
+}
+
+@media (min-width: 1500px) {
+    body {
+        margin-left: 200px;
+    }
+}

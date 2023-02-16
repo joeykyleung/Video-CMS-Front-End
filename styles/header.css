@@ -1,0 +1,194 @@
+.header {
+  height: 55px;
+  margin-bottom: 20px;
+  background-color: white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: lightgrey;
+
+  z-index: 2;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  height: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.logo {
+  height: 70px;
+}
+
+.middle {
+  flex: 1;
+  margin-left: 50px;
+  margin-right: 35px;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  height: 36px;
+  flex: 1;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  /*box-shadow set to inset for shadow inside box*/
+  padding-left: 10px;
+  width: 0px;
+  /*search boxes have a default width, will not shrink further if window is more narrow*/
+}
+
+.search::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+
+.search-button {
+  height: 40px;
+  width: 66px;
+  /*border-width: 1px;
+  border-style: solid;
+  border-color: lightgray; -shortform below*/
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -1px;
+  margin-right: 10px;
+  background-color: rgb(240, 240, 240);
+
+}
+
+.search-button,
+.search-voice-button,
+.apps-container,
+.upload-container {
+  position: relative;
+}
+
+.search-button .tooltip,
+.search-voice-button .tooltip,
+.apps-container .tooltip,
+.notifs .tooltip,
+.upload-container .tooltip {
+  /*targets all tooltip class elements within search-button class, to select only direct children of search-button use .search-button > .tooltip*/
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px;
+  border-radius: 2px;
+  bottom: -30px;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  /*add transition animation to opacity. set pointer-events to none so when mouse is over tooltip, it doesn't still display, since it is part of search-button*/
+  white-space: nowrap;
+  /*make sure text doesn't wrap*/
+}
+
+/*pseudo class like :hover used to target tooltip only when hovering over search-button*/
+.search-button:hover .tooltip,
+.search-voice-button:hover .tooltip,
+.apps-container:hover .tooltip,
+.notifs:hover .tooltip,
+.upload-container:hover .tooltip {
+  opacity: 1;
+}
+
+.search-voice-button {
+  height: 40px;
+  width: 40px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  border-radius: 20px;
+  border: none;
+}
+
+.search-button-img,
+.search-voice-img {
+  height: 20px;
+}
+
+.right {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 18px;
+  flex-shrink: 0;
+  /*makes sure if window adjusts, spaces don't shift*/
+}
+
+.upload-button,
+.apps-button,
+.notifications-button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.upload-button-img,
+.apps-button-img,
+.notifications-button-img {
+  height: 25px;
+}
+
+.notifs {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.notifications-button-img {
+  height: 35px;
+}
+
+.notifs-count {
+  position: absolute;
+  top: -2px;
+  right: -6px;
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  background-color: rgb(200, 0, 0);
+  color: white;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 10px;
+}
+
+.channel-profile {
+  height: 40px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
